@@ -14,6 +14,7 @@ Source:		http://search.cpan.org/CPAN/authors/id/J/JD/JDPORTER/%{realname}-%{vers
 %if %{mdkversion} < 1010
 Buildrequires: perl-devel
 %endif
+Buildroot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description
