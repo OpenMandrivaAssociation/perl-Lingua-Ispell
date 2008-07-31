@@ -1,7 +1,7 @@
 %define name perl-Lingua-Ispell
 %define realname Lingua-Ispell
 %define version 0.07
-%define release %mkrel 14
+%define release %mkrel 15
 
 Name:		%{name}
 Summary:	Ispell inteface perl module
