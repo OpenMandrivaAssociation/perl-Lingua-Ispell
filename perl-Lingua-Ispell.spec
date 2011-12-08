@@ -34,7 +34,7 @@ make PREFIX=$RPM_BUILD_ROOT%{_prefix} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 if [ -d $RPM_BUILD_ROOT ]; then rm -rf $RPM_BUILD_ROOT; fi
-rm -rf $RPM_BUILD_DIR/%{upstream_name}-%{upstream_version}
+rm -rf %{_builddir}/%{upstream_name}-%{upstream_version}
 
 %files
 %defattr(-,root,root)
