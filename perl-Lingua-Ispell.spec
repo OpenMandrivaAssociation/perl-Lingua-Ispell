@@ -10,7 +10,7 @@ Release:	3
 Summary:	Ispell inteface perl module
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JD/JDPORTER/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
@@ -34,3 +34,4 @@ make test
 %doc Changes MANIFEST README
 %{perl_vendorlib}/Lingua/*
 %{_mandir}/*/*
+
