@@ -4,14 +4,14 @@
 %define upstream_version 0.07
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Ispell inteface perl module
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JD/JDPORTER/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Lingua-Ispell
+Source0:	https://cpan.metacpan.org/authors/id/J/JD/JDPORTER/Lingua-Ispell-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
