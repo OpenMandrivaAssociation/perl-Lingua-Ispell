@@ -1,17 +1,15 @@
 %define debug_package %{nil}
 
 %define upstream_name    Lingua-Ispell
-%define upstream_version 0.07
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.07
+Release:	7
 
 Summary:	Ispell inteface perl module
 License:	GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Lingua-Ispell
-Source0:	https://cpan.metacpan.org/authors/id/J/JD/JDPORTER/Lingua-Ispell-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JD/JDPORTER/Lingua-Ispell-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ BuildArch:	noarch
 Interface to the Ispell spellchecker.
 
 %prep 
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 CFLAGS="%{optflags}" perl Makefile.PL INSTALLDIRS=vendor
