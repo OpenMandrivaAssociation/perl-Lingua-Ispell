@@ -4,7 +4,7 @@
 %define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	2
+Release:	3
 
 Summary:	Ispell inteface perl module
 License:	GPL
@@ -25,10 +25,12 @@ Interface to the Ispell spellchecker.
 %build
 CFLAGS="%{optflags}" perl Makefile.PL INSTALLDIRS=vendor
 make
-make test || :
 
 %install
 %makeinstall_std
+
+%check
+make test || :
 
 %files
 %doc Changes MANIFEST README
